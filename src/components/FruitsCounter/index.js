@@ -5,12 +5,13 @@ import './index.css'
 class FruitsCounter extends Component {
   state = {mangoesCount: 4, bananasCount: 5}
 
-  onClickEatBanana() {
-    this.setState(prevState => ({bananasCount: prevState.bananasCount + 1}))
+  onClickEatMango = () => {
+    this.setState(prevState => ({mangoesCount: prevState.mangoesCount + 1}))
   }
 
-  onClickEatMango() {
-    this.setState(prevState => ({mangoesCount: prevState.mangoesCount + 1}))
+  onClickEatBanana = () => {
+    // const {bananasCount} = this.state
+    this.setState(prevState => ({bananasCount: prevState.bananasCount + 1}))
   }
 
   render() {
@@ -34,7 +35,7 @@ class FruitsCounter extends Component {
                 <button
                   type="button"
                   className="button"
-                  onClick={this.onClickEatMango()}
+                  onClick={this.onClickEatMango}
                 >
                   Eat Mango
                 </button>
@@ -50,7 +51,7 @@ class FruitsCounter extends Component {
                 <button
                   type="button"
                   className="button"
-                  onClick={this.onClickEatBanana()}
+                  onClick={this.onClickEatBanana}
                 >
                   Eat Banana
                 </button>

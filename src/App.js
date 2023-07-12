@@ -1,4 +1,4 @@
-import FruitsCounter from './components/FruitsCounter/index'
+import FruitsCounter from './components/FruitsCounter'
 
 import './App.css'
 
